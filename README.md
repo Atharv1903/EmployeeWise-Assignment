@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# 🚀 EmployWise Frontend Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully functional React-based user management app built with authentication, user listing, pagination, edit/delete functionality, client-side caching, and a modern user interface — powered by the [Reqres API](https://reqres.in/).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✅ **Login with authentication**  
+✅ **Protected routing**  
+✅ **User list with pagination**  
+✅ **Search/filter by name or email**  
+✅ **Edit user with inline update**  
+✅ **Delete user with real-time state update**  
+✅ **Local caching for faster navigation**  
+✅ **Logout + token expiry handling**  
+✅ **Beautiful CSS styling**  
+✅ **Toast notifications for actions**  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧠 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ⚛️ React + React Router
+- 📦 Axios
+- 💅 CSS (custom styling)
+- 🔥 React Toastify
+- 🗃️ LocalStorage (for auth and caching)
+- 📡 [Reqres.in](https://reqres.in/) (Fake API)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/Atharv1903/EmployeeWise-Assignment.git
+cd employee
+npm install
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🔐 Login Credentials
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Use these test credentials (as per Reqres API docs):
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+Email: eve.holt@reqres.in
+Password: cityslicka
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> 🔒 Token and expiry are stored in localStorage for session handling.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📁 Folder Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+├── components/
+│   ├── EditUserForm.jsx
+│   ├── LoginForm.jsx
+│   └── UserCard.jsx
+├── pages/
+│   ├── LoginPage.jsx
+│   └── UsersPage.jsx
+├── App.jsx
+├── index.css
+├── index.js
+├── api.js
+├── utils.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧪 API Endpoints Used
 
-### Analyzing the Bundle Size
+- `POST /api/login` – Authenticate and get token  
+- `GET /api/users?page=1` – Paginated list of users  
+- `PUT /api/users/:id` – Update user info  
+- `DELETE /api/users/:id` – Delete user
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🌍 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The app can be deployed on any free static host like:
 
-### Advanced Configuration
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
+- [Render](https://render.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> Add your live link here once deployed:
+```
+🔗 https://employee-wise-assignment-amber.vercel.app/
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📌 Notes
 
-### `npm run build` fails to minify
+- Only test credentials are allowed.
+- No backend data persistence (API is simulated).
+- Great for demonstrating frontend skills and async flow.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+> Made with 💻 by Atharv Kharmate for EmployWise Assignment
